@@ -36,7 +36,7 @@ predicted = clf.predict(X_test)
 print(accuracy_score(predicted, y_test))
 
 import pickle
-with open('/Users/shreyakvashisht/PycharmProjects/ml-project-flask-dep/model_registry/rf.pkl', 'wb') as model_pkl:
+with open('/rf.pkl', 'wb') as model_pkl:
     pickle.dump(clf, model_pkl, protocol=2)
     
     

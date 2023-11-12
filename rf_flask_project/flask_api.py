@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 import pandas as pd
 
-path = '/Users/shreyakvashisht/PycharmProjects/ml-project-flask-dep/model_registry/rf.pkl'
+path = '/rf.pkl'
 with open(path,'rb') as model_file:
     model = pickle.load(model_file)
 app = Flask(__name__)
